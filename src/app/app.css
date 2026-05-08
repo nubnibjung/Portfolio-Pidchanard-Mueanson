@@ -1,0 +1,96 @@
+:host {
+  display: block;
+}
+
+.portfolio-page {
+  position: relative;
+  min-height: 100dvh;
+  padding-bottom: 96px;
+  background: var(--background);
+}
+
+.portfolio-page::before {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  background: var(--background);
+  opacity: 0.5;
+  pointer-events: none;
+  backdrop-filter: blur(6px);
+  animation: page-overlay-reveal 0.75s ease-out forwards;
+  content: '';
+}
+
+.portfolio-page > * {
+  opacity: 0;
+  transform: translate3d(0, 14px, 0);
+  animation: section-reveal 0.72s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  will-change: opacity, transform;
+}
+
+.portfolio-page > :nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.portfolio-page > :nth-child(2) {
+  animation-delay: 90ms;
+}
+
+.portfolio-page > :nth-child(3) {
+  animation-delay: 180ms;
+}
+
+.portfolio-page > :nth-child(4) {
+  animation-delay: 270ms;
+}
+
+.portfolio-page > :nth-child(5) {
+  animation-delay: 360ms;
+}
+
+.portfolio-page > :nth-child(6) {
+  animation-delay: 450ms;
+}
+
+.portfolio-page > :nth-child(7) {
+  animation-delay: 540ms;
+}
+
+.portfolio-page > app-dock {
+  animation-delay: 650ms;
+}
+
+@keyframes page-overlay-reveal {
+  0% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes section-reveal {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 14px, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .portfolio-page::before,
+  .portfolio-page > * {
+    animation: none;
+    opacity: 0;
+  }
+
+  .portfolio-page > * {
+    opacity: 1;
+    transform: none;
+  }
+}

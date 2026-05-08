@@ -1,0 +1,22 @@
+<section class="page-section">
+  <app-section-header
+    eyebrow="Competitions & Challenges"
+    title="Building and learning by doing"
+    description="A short record of practice, collaboration, and problem solving outside ordinary coursework."
+  />
+
+  <div class="achievement-list">
+    @for (achievement of achievements(); track achievement.title + achievement.date) {
+      <article class="achievement-item">
+        <div class="date-block">
+          <strong>{{ achievement.date }}</strong>
+          <span>{{ achievement.location }}</span>
+        </div>
+        <div>
+          <h3>{{ achievement.title }}</h3>
+          <p>{{ achievement.description }}</p>
+        </div>
+      </article>
+    }
+  </div>
+</section>
