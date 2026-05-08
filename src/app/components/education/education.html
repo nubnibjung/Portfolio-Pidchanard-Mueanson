@@ -1,0 +1,17 @@
+<section class="page-section" id="education">
+  <app-section-header eyebrow="" title="Education" description="" />
+
+  <article class="education-item">
+    <div class="education-logo" aria-hidden="true">
+      <img src="/assets/images/education/kasetsart-logo.png?v=2" alt="" />
+    </div>
+    <div class="education-content">
+      <div>
+        <h3 class="font-sans text-sm font-bold">{{ education().school }}</h3>
+        <p class="font-sans text-xs text-foreground">{{ education().degree }}</p>
+        <p class="font-sans text-xs text-muted-foreground">{{ education().description }}</p>
+      </div>
+      <p class="period font-sans text-sm text-muted-foreground">{{ education().period }}</p>
+    </div>
+  </article>
+</section>

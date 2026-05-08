@@ -1,0 +1,41 @@
+:host {
+  --section-title-color: var(--text-dark);
+  --section-muted-color: var(--text-muted);
+}
+
+:host-context(.dark-mode) {
+  --section-title-color: var(--text-light);
+  --section-muted-color: var(--text-muted);
+}
+
+.section-header {
+  display: grid;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.eyebrow {
+  color: var(--section-muted-color);
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+h2,
+p {
+  margin: 0;
+}
+
+h2 {
+  color: var(--section-title-color);
+  font-size: 1.35rem;
+  line-height: 1.25;
+  font-weight: 900;
+  letter-spacing: -0.04em;
+}
+
+p {
+  max-width: 680px;
+  color: var(--section-muted-color);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}

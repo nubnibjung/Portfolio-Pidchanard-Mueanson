@@ -1,0 +1,20 @@
+<section class="page-section" id="skills">
+  <app-section-header
+    eyebrow=""
+    title="Skills"
+    description=""
+  />
+
+  <div class="skill-grid">
+    @for (group of skillGroups(); track group.title) {
+      <article class="skill-card">
+        <h3>{{ group.title }}</h3>
+        <div class="tag-list">
+          @for (skill of group.skills; track skill) {
+            <span>{{ skill }}</span>
+          }
+        </div>
+      </article>
+    }
+  </div>
+</section>

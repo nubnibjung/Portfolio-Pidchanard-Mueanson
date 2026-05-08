@@ -1,0 +1,70 @@
+<section class="page-section" id="experience">
+  <app-section-header
+    eyebrow=""
+    title="Work Experience"
+    description=""
+  />
+
+  <div class="timeline">
+    @for (experience of experiences(); track experience.company + experience.period; let index = $index) {
+      <article class="timeline-item">
+        <div class="timeline-marker" [attr.data-index]="index" aria-hidden="true">
+          @if (index === 0) {
+            <img
+              class="gofive-logo"
+              src="/assets/images/companies/gofive.png?v=1"
+              alt="Gofive logo"
+            />
+          }
+        </div>
+        <div class="timeline-content">
+          <div class="item-heading">
+            <div>
+              <div class="company-row">
+                <h3 class="font-sans text-sm font-bold">{{ experience.company }}</h3>
+                <span class="work-type font-sans text-xs font-bold">{{ experience.type }}</span>
+                @if (experience.highlights.length) {
+                  <button
+                    class="toggle-button"
+                    type="button"
+                    (click)="toggleExperience(index)"
+                    [attr.aria-expanded]="isExpanded(index)"
+                    [attr.aria-label]="(isExpanded(index) ? 'Collapse ' : 'Expand ') + experience.company + ' details'"
+                  >
+                    @if (isExpanded(index)) {
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708z" />
+                      </svg>
+                    } @else {
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+                      </svg>
+                    }
+                  </button>
+                }
+              </div>
+              <p class="role font-sans text-xs text-foreground">{{ experience.role }}</p>
+            </div>
+            <p class="period font-sans text-sm text-muted-foreground">{{ experience.period }}</p>
+          </div>
+
+          @if (experience.highlights.length) {
+            <div
+              class="details-panel"
+              [class.is-expanded]="isExpanded(index)"
+              [attr.aria-hidden]="!isExpanded(index)"
+            >
+              <div class="details-content">
+                <ul class="clean-list font-sans text-sm text-foreground">
+                  @for (highlight of experience.highlights; track highlight) {
+                    <li>{{ highlight }}</li>
+                  }
+                </ul>
+              </div>
+            </div>
+          }
+        </div>
+      </article>
+    }
+  </div>
+</section>

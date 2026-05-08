@@ -1,0 +1,52 @@
+:host {
+  display: block;
+}
+
+.page-section {
+  max-width: 672px;
+  margin: 0 auto;
+  padding: 0 24px 44px;
+}
+
+.about-grid {
+  display: grid;
+  gap: 14px;
+}
+
+.text-panel {
+  display: grid;
+  gap: 10px;
+}
+
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+h3 {
+  display: none;
+}
+
+h4 {
+  color: var(--text);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+p {
+  max-width: 640px;
+}
+
+.panel-kicker {
+  color: var(--text-muted);
+  font-size: 0.83rem;
+  font-weight: 600;
+}
+
+@media (max-width: 640px) {
+  .page-section {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
