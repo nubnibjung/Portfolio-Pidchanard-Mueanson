@@ -17,7 +17,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 38px;
+  gap: 24px;
 }
 
 .hero-copy {
@@ -37,6 +37,14 @@ h1 {
   line-height: 0.95;
   font-weight: 900;
   letter-spacing: -0.07em;
+  white-space: nowrap;
+}
+
+.wave {
+  display: inline-block;
+  margin-left: 0.12em;
+  letter-spacing: 0;
+  vertical-align: baseline;
 }
 
 .hero-tagline {
@@ -69,6 +77,11 @@ h1 {
 
   .hero-main {
     align-items: center;
+    gap: 16px;
+  }
+
+  h1 {
+    font-size: clamp(2.4rem, 10vw, 3rem);
   }
 
   .avatar {
