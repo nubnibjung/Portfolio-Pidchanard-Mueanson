@@ -123,7 +123,7 @@ export const projects: readonly Project[] = [
       'A complete online ice cream shop with dynamic product catalog, shopping cart, order tracking, inventory control, user account management, and secure transaction records.',
     technologies: ['PHP', 'MySQL', 'E-commerce'],
     links: [
-      { label: 'Live Demo', href: 'https://github.com/nubnibjung' },
+      { label: 'Live Demo', href: 'https://icecreampidchanard.infinityfree.me/' },
       { label: 'Source', href: 'https://github.com/nubnibjung' },
     ],
   },
