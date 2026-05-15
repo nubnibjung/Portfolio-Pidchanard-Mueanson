@@ -1,5 +1,6 @@
 :host {
   display: block;
+  width: 100%;
   --education-title-color: var(--text-dark);
   --education-text-color: var(--text-dark);
   --education-muted-color: var(--text-dark);
@@ -16,6 +17,7 @@
 }
 
 .page-section {
+  width: 100%;
   max-width: 672px;
   margin: 0 auto;
   padding: 34px 24px 18px;

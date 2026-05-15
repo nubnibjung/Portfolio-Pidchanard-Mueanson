@@ -1,8 +1,10 @@
 :host {
   display: block;
+  width: 100%;
 }
 
 .page-section {
+  width: 100%;
   max-width: 672px;
   margin: 0 auto;
   padding: 0 24px 44px;

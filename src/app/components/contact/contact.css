@@ -1,11 +1,13 @@
 :host {
   display: block;
+  width: 100%;
 }
 
 .page-section {
   display: grid;
   justify-items: center;
   gap: 12px;
+  width: 100%;
   max-width: 672px;
   margin: 0 auto;
   padding: 28px 24px 128px;

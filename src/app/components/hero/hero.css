@@ -1,8 +1,10 @@
 :host {
   display: block;
+  width: 100%;
 }
 
 .hero-section {
+  width: 100%;
   max-width: 672px;
   margin: 0 auto;
   padding: 84px 24px 58px;
@@ -98,16 +100,20 @@ h1 {
   }
 
   .hero-main {
-    align-items: center;
-    gap: 16px;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 72px;
+    align-items: start;
+    gap: 12px;
   }
 
   h1 {
     font-size: clamp(2.4rem, 10vw, 3rem);
+    white-space: normal;
   }
 
   .avatar {
-    width: 82px;
-    height: 82px;
+    width: 72px;
+    height: 72px;
+    margin-top: 2px;
   }
 }
