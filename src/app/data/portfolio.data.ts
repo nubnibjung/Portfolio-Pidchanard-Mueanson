@@ -101,8 +101,8 @@ export const projects: readonly Project[] = [
       'A water distribution and e-commerce platform built with Angular and Node.js (Express), featuring a responsive product catalog, real-time shopping cart management, multi-step checkout workflow, Reactive Forms validation, and RESTful API integration.',
     technologies: ['Angular', 'Node.js', 'Express', 'MSSQL', 'Reactive Forms', 'REST API'],
     links: [
-      { label: 'Live Demo', href: 'https://github.com/nubnibjung' },
-      { label: 'Source', href: 'https://github.com/nubnibjung' },
+      { label: 'Live Demo', href: 'https://numkub.netlify.app/' },
+      { label: 'Source', href: 'https://github.com/pidchanard/NAMKUB-Store-me' },
     ],
   },
   {
@@ -112,8 +112,8 @@ export const projects: readonly Project[] = [
       'A village facility booking system for housing estates with real-time scheduling, automated conflict resolution to prevent double bookings, and an administrative dashboard for monitoring usage quotas and approving requests.',
     technologies: ['Angular', '.NET', 'SQL Server'],
     links: [
-      { label: 'Live Demo', href: 'https://github.com/nubnibjung' },
-      { label: 'Source', href: 'https://github.com/nubnibjung' },
+      { label: 'Live Demo', href: 'https://village-club.netlify.app/' },
+      { label: 'Source', href: 'https://github.com/pidchanard/VillageClubHouse-demo' },
     ],
   },
   {

@@ -56,6 +56,28 @@ h1 {
   letter-spacing: -0.03em;
 }
 
+.resume-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+  padding: 10px 20px;
+  border-radius: 999px;
+  border: 1.5px solid var(--text);
+  background: transparent;
+  color: var(--text);
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  text-decoration: none;
+  transition: background 0.15s, color 0.15s;
+}
+
+.resume-btn:hover {
+  background: var(--text);
+  color: var(--background);
+}
+
 .avatar {
   flex: 0 0 auto;
   width: 110px;

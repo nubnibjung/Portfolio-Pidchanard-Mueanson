@@ -65,37 +65,40 @@
   align-items: end;
   height: 160px;
   min-height: 0;
-  padding: 22px;
+  padding: 20px;
   border-bottom: 1px solid var(--line);
   background: #0c0c0d;
   color: var(--text-light);
-  font-size: 1.8rem;
-  font-weight: 800;
+  font-size: 1.6rem;
+  font-weight: 900;
+  letter-spacing: -0.03em;
 }
 
 .project-visual[data-index='0'] {
   background:
-    radial-gradient(circle at 72% 28%, rgb(255 255 255 / 18%), transparent 18%),
-    radial-gradient(circle at 80% 58%, rgb(236 72 153 / 24%), transparent 26%),
-    linear-gradient(135deg, #111111, #191919 55%, #2a2a2a);
+    radial-gradient(ellipse at 10% 90%, rgb(56 189 248 / 35%) 0%, transparent 45%),
+    radial-gradient(circle at 90% 10%, rgb(99 102 241 / 40%) 0%, transparent 38%),
+    radial-gradient(circle at 55% 50%, rgb(14 165 233 / 12%) 0%, transparent 55%),
+    linear-gradient(155deg, #020c1f 0%, #0a1f5e 55%, #0d2b7a 100%);
+  color: rgb(255 255 255 / 95%);
 }
 
 .project-visual[data-index='1'] {
-  align-items: start;
   background:
-    linear-gradient(#f8fafc 1px, transparent 1px),
-    linear-gradient(90deg, #f8fafc 1px, transparent 1px),
-    #ffffff;
-  background-size: 18px 18px;
-  color: #0f172a;
-  font-size: 1.15rem;
+    radial-gradient(circle at 85% 85%, rgb(52 211 153 / 30%) 0%, transparent 40%),
+    radial-gradient(circle at 15% 15%, rgb(129 140 248 / 25%) 0%, transparent 40%),
+    radial-gradient(circle at 50% 50%, rgb(45 212 191 / 10%) 0%, transparent 55%),
+    linear-gradient(135deg, #0f172a 0%, #1e293b 55%, #0d2137 100%);
+  color: rgb(255 255 255 / 95%);
 }
 
 .project-visual[data-index='2'] {
   background:
-    radial-gradient(circle at 78% 20%, #ffd6e8, transparent 22%),
-    linear-gradient(135deg, #fff7ed, #fde68a);
-  color: #111111;
+    radial-gradient(circle at 85% 15%, rgb(251 113 133 / 80%) 0%, transparent 35%),
+    radial-gradient(circle at 15% 85%, rgb(249 168 212 / 65%) 0%, transparent 38%),
+    radial-gradient(circle at 55% 45%, rgb(253 224 71 / 45%) 0%, transparent 45%),
+    linear-gradient(135deg, #fff1f2 0%, #fce7f3 55%, #fef9c3 100%);
+  color: #3b0764;
 }
 
 .project-body {
